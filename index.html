@@ -3,19 +3,20 @@
 
 <head>
     <meta charset="UTF-8" />
+    <!--Bootstrap for responsiveness and navbar-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Horiseon - Social Solution Services</title>
 </head>
 
 <body>
-    <!--Header serves as navbar; Wraps around on small screen; unresponsive-->
+    <!--Header serves as navbar; Wraps around on small screen-->
     <!--Changed from div with class of header to a header tag-->
     <header>
-        <!--<h1>Hori<span class="seo">seo</span>n</h1>-->
         <!--change div to nav to define navigation bar-->
         <nav class="navbar navbar-expand-md navbar-dark">
             <h1 class="navbar-brand">Hori<span class="seo">seo</span>n</h1>
+
             <!--Navbar collapse button-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,33 +36,21 @@
                     </li>
                 </ul>
             </hgroup>
-            <!--
-            <ul>
-                <li>
-                    <a href="#search-engine-optimization">Search Engine Optimization</a>
-                </li>
-                <li>
-                    <a href="#online-reputation-management">Online Reputation Management</a>
-                </li>
-                <li>
-                    <a href="#social-media-marketing">Social Media Marketing</a>
-                </li>
-            </ul>
-             -->
         </nav>
     </header>
 
-    <!--Hero wraps around a main image that remains fixed below header.-->
+    <!--Hero wraps around a main image that remains fixed below header. Responsive-->
     <!--Changed div to figure tag-->
     <figure class="hero">
         <img src="assets/images/digital-marketing-meeting.jpg" alt="One woman and three men analyze documents at workplace">
     </figure>
 
-    <!--Main content section which remains on the left.-->
+    <!--Main content and benefits aside wrapped in container-->
     <!--Changed main div to main tag and sub-divs to article tags.-->
-    <section class="container">
+    <section class="wrapper">
         <section class="row justify-content-between">
-            <main class="content col-lg-9 col-xl-9">
+             <!--Main content section remains on the left.-->
+            <main class="content col-lg-9">
                 <article id="search-engine-optimization" class="content-item">
                     <img src="./assets/images/search-engine-optimization.jpg" class="float-left content-image" alt="Notebook on wooden desk with SEO written in center">
                     <h2 class="content-heading">Search Engine Optimization</h2>
@@ -85,9 +74,9 @@
                 </article>
             </main>
         
-            <!--Benefits floats right of content. Wraps around on ultra small width; Could benefit from responsive framework.-->
+            <!--'Benefits' aside tag remains on the right.-->
             <!--Changed main div to aside tag and sub-divs to article tags-->
-            <aside class="benefits col-lg-3 col-xl-3">
+            <aside class="benefits col-lg-3">
                 <article class="benefit-item">
                     <h3 class="benefit-heading">Lead Generation</h3>
                     <figure>
@@ -119,7 +108,6 @@
         </section>
     </section>
     
-
     <!--Footer at bottom of page.-->
     <!--Changed div tag with class of footer to footer tag-->
     <footer>
