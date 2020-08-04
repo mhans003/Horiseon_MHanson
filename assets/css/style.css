@@ -1,3 +1,5 @@
+/*GENERAL STYLES*/
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,7 +10,17 @@ body {
     background-color: #d9dcd6;
 }
 
-/*Changed all references of .header to header due to change of div to header tag*/
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+/*HEADER STYLES*/
+
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -16,19 +28,17 @@ header {
     color: #ffffff;
 }
 
+nav {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
 .navbar-brand {
     font-size: 48px;
 }
 
-/*Simplified to just referencing .seo*/
-.seo {
+#seo {
     color: #d9dcd6;
-}
- 
-/*Changed all header div styles to nav*/
-nav {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
 }
 
 .navbar-nav {
@@ -48,25 +58,17 @@ nav {
     color: #d9dcd6 !important; 
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
+/*MAIN IMAGE STYLES*/
 
-p {
-    font-size: 16px;
-}
-
-/*Removed background-image and placed img tag in .hero div for use of 
-the alt img attribute for purposes of accessibility. Changed value of 
-height to relative to prevent stretching while keeping width 100%.*/
-.hero img {
+#hero img {
     height: relative; 
     width: 100%;
     margin-bottom: 25px;
     background-size: cover;
     background-position: center;
 }
+
+/*CONTENT FLOAT STYLES*/
 
 .float-left {
     float: left;
@@ -78,55 +80,13 @@ height to relative to prevent stretching while keeping width 100%.*/
     margin-left: 25px;
 }
 
-.container {
-  
-    
-    
-}
+/*MAIN PAGE CONTENT STYLES*/
 
-.wrapper {
-
-   
-}
-
-.row {
+#content-wrapper {
     margin-left: 2%; 
     margin-right: 2%; 
 }
 
-/*Styling for entire content section*/
-.content {
-   
-}
-
-/*Styling for entire benefits section*/
-.benefits {
-    padding: 20px; 
-    text-align: center; 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
-}
-
-/*Separate benefit divs given same class name (.benefit-item)*/
-.benefit-item {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-/*Separate h3 tags in benefit items given same class name (.benefit-heading)*/
-.benefit-heading {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-/*Separate images in benefit items given same class name (.benefit-image)*/
-.benefit-image {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-/*Separate content divs given same class name (.content-item)*/
 .content-item {
     margin-bottom: 20px;
     padding: 50px;
@@ -136,19 +96,43 @@ height to relative to prevent stretching while keeping width 100%.*/
     overflow: auto; 
 }
 
-/*Separate content div images given same class name (.content-image)*/
 .content-image {
     max-height: 200px; 
     margin-bottom: 20px; 
 }
 
-/*Separate content h2 tags given same class name (.content-heading)*/
 .content-heading {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-/*Changed all references of .footer to footer due to change of div to footer tag*/
+/*BENEFITS SIDEBAR STYLES*/
+
+#benefits {
+    padding: 20px; 
+    text-align: center; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+.benefit-item {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-heading {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-image {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/*FOOTER STYLES*/
+
 footer {
     padding: 30px;
     clear: both;
