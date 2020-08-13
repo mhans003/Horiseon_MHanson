@@ -4,7 +4,7 @@
 
 [Horiseon](https://mhans003.github.io/Horiseon_MHanson/)
 
-![Horiseon Screenshot](./assets/images/search-engine-optimization.jpg)
+![Horiseon Screenshot](./assets/images/homepage.jpg)
 
 ### Description
 
